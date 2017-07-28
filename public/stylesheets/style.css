@@ -1,0 +1,80 @@
+body {
+  padding-top: 45px;
+  background-color: green;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: cursive;
+  color: red;
+  text-shadow: -2px -3px white;
+}
+h1 {
+	text-align: center;
+	font-size: 90px;
+}
+p {
+	text-align: center;
+	font-size: 60px;
+}
+.footer {
+	width: 110%;
+	height: 300px;
+	margin-left: -5%;
+	background-color: rgb(110,110,110);
+}
+.footer-text {
+	color: white;
+	text-shadow: none;
+	font-family: none;
+	font-size: 24px;
+	margin: 0px;
+	padding-top: 5%;
+}
+#tree {
+	background-image: url('../images/tree.png');
+	height: 720px;
+	width: 500px;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 100;
+}
+#hill {
+	background-image: url('../images/snowman.png');
+	height: 1000px;
+	width: 3000px;
+	margin-left: -100px;
+	margin-bottom: -720px;
+	z-index: -100;
+}
+#snow {
+	background-image: url('../images/s1.png'), url('../images/s2.png'), url('../images/s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
